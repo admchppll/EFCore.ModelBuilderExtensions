@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using System.Linq;
 
-namespace UsefulEFCore.Extensions.IMutablePropertyExtensions
+namespace EFCore.ModelBuilderExtensions.Extensions.IMutablePropertyExtensions
 {
     internal static class PropertyExtensions
     {

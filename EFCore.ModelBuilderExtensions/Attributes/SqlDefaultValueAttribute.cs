@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UsefulEFCore.Attributes
+namespace EFCore.ModelBuilderExtensions.Attributes
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
     public class SqlDefaultValueAttribute : Attribute

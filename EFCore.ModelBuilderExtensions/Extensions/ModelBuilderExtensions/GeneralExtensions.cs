@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace UsefulEFCore.Extensions.ModelBuilderExtensions
+namespace EFCore.ModelBuilderExtensions.Extensions.ModelBuilderExtensions
 {
     internal static class GeneralExtensions
     {
