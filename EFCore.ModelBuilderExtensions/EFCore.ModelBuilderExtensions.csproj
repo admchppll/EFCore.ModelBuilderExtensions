@@ -4,11 +4,25 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AssemblyName>EFCore.ModelBuilderExtensions</AssemblyName>
     <RootNamespace>EFCore.ModelBuilderExtensions</RootNamespace>
+    <Copyright>Adam Chappell</Copyright>
+    <PackageProjectUrl>https://github.com/admchppll/EFCore.ModelBuilderExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/admchppll/EFCore.ModelBuilderExtensions</RepositoryUrl>
+    <Description>A library for entensions to Entity Framework Core for model building.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
