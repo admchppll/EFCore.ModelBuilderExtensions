@@ -1,5 +1,33 @@
-# UsefulEFCore
+# EFCore.ModelBuilderExtensions
 
-A library for useful entensions to Entity Framework Core.
+A library for entensions to Entity Framework Core for model building.
 
-More information coming soon...
+Currently this only includes setting default values for SQL databases.
+
+## Usage
+### SQL Default Values
+
+In the model context, use the SetSQLDefaultValues() extension method inside the ```OnModelCreating``` method.
+```
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.SetSQLDefaultValues();
+}
+```
+
+Add the ```SqlDefaultValue``` attribute in the EFCore.ModelBuilderExtensions.Attributes namespace on an Entity Framework model class.
+
+```
+public class ExampleClass
+{
+    [SqlDefaultValue("Hello World")]
+    public string ClassProperty { get; set; }
+
+    [SqlDefaultValue("getdate()")]
+    public DateTime DateProperty { get; set; }
+}
+```
+
+Now you're set!
+
+Use the standard ```Add-Migration``` command in the package manager console. If you go to the migration that is built you will notice the ```defaultValueSql``` property is set against the column definition.
