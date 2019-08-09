@@ -6,7 +6,17 @@ Currently this only includes setting default values for SQL databases.
 
 ## Install
 
-Package is available on Nuget. https://www.nuget.org/packages/EFCore.ModelBuilderExtensions/1.0.0#
+This package is available for install on [Nuget](https://www.nuget.org/packages/EFCore.ModelBuilderExtensions/).
+
+### Nuget Package Manager
+```
+Install-Package EFCore.ModelBuilderExtensions -Version 1.0.0
+```
+
+### .NET CLI
+```
+dotnet add package EFCore.ModelBuilderExtensions --version 1.0.0
+```
 
 ## Usage
 ### SQL Default Values
