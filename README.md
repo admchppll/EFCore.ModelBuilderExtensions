@@ -4,6 +4,10 @@ A library for entensions to Entity Framework Core for model building.
 
 Currently this only includes setting default values for SQL databases.
 
+## Install
+
+Package is available on Nuget. https://www.nuget.org/packages/EFCore.ModelBuilderExtensions/1.0.0#
+
 ## Usage
 ### SQL Default Values
 
