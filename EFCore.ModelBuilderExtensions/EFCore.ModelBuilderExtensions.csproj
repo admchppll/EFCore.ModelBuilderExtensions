@@ -11,6 +11,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>Adam Chappell</Authors>
+    <Company />
+    <PackageTags>Entity, Framework,Core,EFCore,EF,entity-framework,entity-framework-core,EntityFramework, EntityFrameworkCore</PackageTags>
+    <FileVersion>1.1.0.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
