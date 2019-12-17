@@ -13,7 +13,7 @@ namespace EFCore.ModelBuilderExtensions.Extensions
             builder
                 .Properties()
                 .Where(x => x.HasAttribute<SqlDefaultValueAttribute>())
-                .Configure(c => c.Relational().DefaultValueSql = c.GetAttribute<SqlDefaultValueAttribute>().DefaultValue);
+                .Configure(c => c.SetDefaultValueSql(c.GetAttribute<SqlDefaultValueAttribute>().DefaultValue));
         }
     }
 }
